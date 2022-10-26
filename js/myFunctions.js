@@ -1,20 +1,22 @@
 // BTN BACK TOP
-let btnBackTop=document.getElementById('btnBackTop');
-window.onscroll=function(){
-scrollFunction();
-}
-function scrollFunction(){
-if(document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
-    btnBackTop.style.display='block';
-}
-else{
-    btnBackTop.style.display='none';
-}
+let btnBackTop = document.getElementById("btnBackTop");
+window.onscroll = function () {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 600 ||
+    document.documentElement.scrollTop > 600
+  ) {
+    btnBackTop.style.display = "block";
+  } else {
+    btnBackTop.style.display = "none";
+  }
 }
 
-function topFunction(){
-document.body.scrollTop=0;
-document.documentElement.scrollTop=0
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 // Loader
@@ -26,6 +28,5 @@ function myFunction() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
-  document.getElementsByTagName('body').style.display="block"
 }
 AOS.init();

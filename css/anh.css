@@ -1,0 +1,232 @@
+/* start css popular_course */
+.popular_course{
+    background-image: url('https://devplus.edu.vn/assets/images/bg/home-8-bg.jpg');
+    background-position:bottom;
+    padding-bottom: 100px;
+}
+
+.title h2{
+    color:black;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:   'Rubik', sans-serif ;
+}
+.box_item{
+    border: 1px solid #E6E5CF  ;
+    min-height: 350px;
+    padding: 30px;
+    background-color: #f9f7f8 ;
+    border-radius: 4px;
+}
+.box_mainitem{
+    /* padding: 20px 20px 20px 20px; */
+}
+
+.box_item > .box_img > img {
+    border-radius: 10px;
+    width: 100%;
+}
+.box_item > .box_title {
+    padding-left: 10px;
+}
+.box_item > .box_title h5 {
+    font-size: 22px;
+    font-family:   'Rubik', sans-serif ;
+    font-weight: bold;
+    width: 80%;
+}
+.box_title {
+   min-height: 100px;
+   width: 60%;
+}
+/* .box_title h5 {
+    margin-top: 15px;
+    
+    font-family:   'Rubik', sans-serif ;
+    font-weight: bold;
+    margin-left: -10px;
+} */
+/* end css popular_course  */
+
+
+/* start css admission */
+
+.admission{
+    margin-bottom: 30px;
+}
+.admission .admission_img img{
+    width: 100%;
+}
+.admission_text{
+    padding-left: 100px;
+    padding-top: 10px;
+    background-color: #f3f8f9;
+}
+.admission_title{
+    padding-bottom: 20px;
+}
+.admission_title h4{
+    font-size: 30px;
+    letter-spacing: 0.2px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+}
+.admission_content p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    width: 90%;
+    letter-spacing: 0.2px;
+    
+}
+.admission_content{
+    padding-bottom: 20px;
+}
+.admission_button button{
+    background-color: #226FB7;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    border: 1px solid #226FB7 ;
+    padding: 16px 58px;
+
+}
+.admission_button {
+    padding-bottom: 20px;
+}
+.admission_button button:hover{
+    background-color: #1e95ba;
+    transition: 2s;
+    cursor: pointer;
+}
+/* end css admission */
+
+
+@media screen and (min-width: 992px){
+    /* start popular-course */
+    .box_title h5{
+        margin-top: 15px;
+        font-size: 18px;
+        font-family:   'Rubik', sans-serif ;
+        font-weight: bold;
+        margin-left: -10px;
+    }
+  
+    .box_title{
+        width: 100%;
+    }
+    .box_item{
+        min-height: 300px;
+    }
+    /* end popular_course */
+
+    /* start admission */
+    .admission{
+        background-color: #f3f8f9;
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        grid-template-rows: 450px;
+        gap: 20px;
+    }
+    .admission_img{
+        min-width: 100%;
+        display: grid;
+        align-content: center;
+    }
+    .admission_img img{
+        width: 100%;
+    }
+    .admission_text{
+        min-width: 100%;
+        padding-left: 20px;
+        display: grid;
+        align-content: center;
+        padding-bottom: 30px;
+    }
+    /* end admission */
+}
+@media screen and (max-width: 767px){
+    /* start popular-course */
+    .popular_box{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    .box_item .box_title h5{
+        font-size: 20px;
+        font-family:   'Nunito', sans-serif;
+        
+        padding-top: 30px;
+        margin-left: -10px;
+    }
+    .box_item .box_title{
+        width: 100%;
+    }
+      /* end popular_course */
+
+      
+    /* start admission */
+    .admission_text{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content: space-around;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    /* end admission */
+
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    /* start popular-course */
+    .popular_box{
+        display: grid;
+        grid-template-columns: auto auto;
+        /* gap: 20px; */
+        row-gap: 30px;
+    }
+    .box_item{
+        width: 100%;
+    }
+    
+    .box_mainitem{
+        min-width: 100%;
+    }
+    .box_item > .box_title {
+        min-height: 50px;
+        width: 100%;
+    }
+    .box_item > .box_title h5 {
+        font-size: 18px;
+        font-family:   'Nunito', sans-serif;
+        width: 100%;
+        padding-top: 30px;
+        margin-left: -10px;
+        
+    }
+      /* end popular_course */
+
+      
+    /* start admission */
+    .admission{
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+    .admission_img{
+        min-width: 100%;
+    }
+    .admission_text{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        justify-content: space-around;
+        padding-left: 80px;
+        padding-top: 20px;
+        min-width: 100%;
+    }
+    
+    /* end admission */
+}
+
