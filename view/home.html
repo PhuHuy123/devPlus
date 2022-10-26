@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/icon-logo.png"
+    />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -11,8 +16,15 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/reponsive.css" />
+
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/reponsive-header.css" />
     <title>
       Dev+ Mission is support the early stage developer go through the right
       career path
@@ -21,6 +33,121 @@
   <body>
     <!-- Loading - Pre Load -->
     <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <input type="checkbox" class="click_menu" hidden id="click-menu" />
+        <div class="row y-middle">
+          <div class="col-lg-2 logo">
+            <img src="../images/logo.png" alt="logo" />
+          </div>
+          <div class="col-lg-9 text-end m-menu">
+            <nav class="rs-menu-area rs-menu">
+              <ul class="ul-main nav-menu">
+                <li>
+                  <a href="#" aria-current="page"> Home </a>
+                </li>
+                <li>
+                  <a href="#" aria-current="page"> About devplus </a>
+                </li>
+                <input
+                  type="checkbox"
+                  hidden
+                  class="click_angle"
+                  id="click-angle"
+                />
+                <li class="our-programme">
+                  <label class="rs-menu-parent" for="click-angle">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                  </label>
+                  <ul class="menu-our sub-menu">
+                    <li>
+                      <a href="one-plus-campus/">One plus campus</a>
+                    </li>
+                    <li>
+                      <a href="two-plus-campus/">Two plus campus</a>
+                    </li>
+                    <li>
+                      <a href="two-plus-campus/">Three plus campus</a>
+                    </li>
+                    <label class="sub-menu-close" for="click-angle">
+                      <i class="fa fa-times" aria-hidden="true"></i>Close
+                    </label>
+                  </ul>
+                  <a href="#" aria-current="page"> Our programme</a>
+                </li>
+                <li>
+                  <a href="#" aria-current="page"> Devplus Activities </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-1 menu">
+            <label class="fa-solid fa-bars" for="click-menu"></label>
+            <div class="c-menu">
+              <div class="close-menu">
+                <label for="click-menu">
+                  <img src="../images/SideBar/close.png" alt="close" />
+                </label>
+              </div>
+              <div class="canvas-logo">
+                <img src="../images/logo.png" alt="logo" />
+              </div>
+              <div class="offcanvas-text">
+                <p>
+                  Devplus's mission is filling the gap between school and
+                  corporate, reduce in-house training cost and effort for IT
+                  companies.
+                </p>
+              </div>
+              <div class="offcanvas-gallery">
+                <div class="gallery-img">
+                  <a class="image-popup" href="../images/SideBar/1.png"
+                    ><img src="../images/SideBar/1.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a class="image-popup" href="../images/SideBar/2.png"
+                    ><img src="../images/SideBar/2.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a class="image-popup" href="../images/SideBar/3.png"
+                    ><img src="../images/SideBar/3.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a class="image-popup" href="../images/SideBar/4.png"
+                    ><img src="../images/SideBar/4.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a class="image-popup" href="../images/SideBar/5.png"
+                    ><img src="../images/SideBar/5.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a class="image-popup"
+                    ><img src="../images/SideBar/6.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="map-img">
+                <img src="../images/SideBar/map.png" alt="" />
+              </div>
+              <div class="m_fb">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/Devplusprogramme"
+                  ><i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- Banner -->
     <!-- About -->
     <!-- Categories -->
@@ -29,6 +156,113 @@
     <!-- Some common concerns -->
     <!-- What alumni saying -->
     <!-- Footer  -->
+    <footer class="rs-footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">
+                DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.
+              </h4>
+              <ul class="site-map site-one white-color">
+                <li>
+                  Devplus is not a training center, it's battle campus for you
+                  to level up your skillsets and ready to onboard any projects
+                  in our “kindest” companies listing
+                </li>
+              </ul>
+            </div>
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">FOR DEVPLUS</h4>
+              <ul class="site-map site-two">
+                <li>
+                  <a href="https:/my.devplus.asia" target="_blank"
+                    >Training space</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/Devplusprogramme"
+                    target="_blank"
+                    >Alumni network</a
+                  >
+                </li>
+                <li>
+                  <a href="https://conext.asia/" target="_blank"
+                    >Connect with experts</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">OUR CAMPUS</h4>
+              <ul class="site-map site-three">
+                <li><a>One plus (+) Programing foundation</a></li>
+                <li><a>Two plus (++) Skill up and onboard</a></li>
+                <li><a>Three plus (+++) Become a senior</a></li>
+              </ul>
+            </div>
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">ADDRESS</h4>
+              <ul class="address-widget">
+                <li>
+                  <div>
+                    <img src="../images/icons/map.png" alt="map" />
+                  </div>
+                  <div class="desc">
+                    368 Đường Trần Hưng Đạo, An Hải, An Hải Tây, Sơn Trà, Đà
+                    Nẵng
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="../images/icons/phone-call.png" alt="phone" />
+                  </div>
+                  <div class="desc">
+                    <a href="tel:0368492885">(+84) 368492885</a>
+                  </div>
+                </li>
+                <li>
+                  <div><img src="../images/icons/mail.png" alt="mail" /></div>
+                  <div class="desc">
+                    <a href="mailto:hello@stunited.vn">hello@stunited.vn</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row y-middle">
+            <div class="col-lg-4">
+              <div class="footer-logo md-text-center">
+                <a class="pointer-default"
+                  ><img src="../images/logo.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-40">
+              <div class="copyright text-center"></div>
+            </div>
+            <div class="col-lg-4 text-end">
+              <ul class="footer-social">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/Devplusprogramme"
+                    ><i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Back to top -->
 
     <script
@@ -46,5 +280,29 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+
+    <!-- === -->
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("header").style.top = "0";
+        } else {
+          document.getElementById("header").style.top = "-90px";
+        }
+        if (
+          document.body.scrollTop == 0 ||
+          document.documentElement.scrollTop == 0
+        ) {
+          document.getElementById("header").style.top = "0px";
+        }
+      }
+    </script>
   </body>
 </html>
