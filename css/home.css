@@ -27,37 +27,32 @@ h6 {
   color: #111111;
   margin: 0 0 26px;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 70px;
-  font-weight: 700;
 }
 h2 {
   font-size: 36px;
-  font-weight: 700;
 }
 
 h3 {
   font-size: 26px;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 24px;
-  font-weight: 700;
 }
 
 h5 {
   font-size: 18px;
-  font-weight: 700;
 }
 
 h6 {
   font-size: 16px;
-  font-weight: 700;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
