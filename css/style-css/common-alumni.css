@@ -1,3 +1,7 @@
+.common-concerns {
+  margin-top: 50px;
+}
+
 .common-concerns-left {
   padding: 60px 50px 70px 50px;
   background-color: #f9f8f8;
@@ -174,11 +178,9 @@
   line-height: 33px;
   font-weight: 500;
   font-style: italic;
-  margin-bottom: 70px;
-}
-
-.alumni-quote-info {
-
+  width: 475px;
+  height: 200px;
+  margin-bottom: 50px;
 }
 
 .alumni-name {

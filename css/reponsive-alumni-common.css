@@ -3,6 +3,11 @@
     width: 700px !important;
     height: 400px !important;
   }
+  .alumni-quote-description {
+    width: 400px !important;
+    height: 240px !important;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -13,6 +18,12 @@
 
   .video-close {
     top: 80% !important;
+  }
+
+  .alumni-quote-description {
+    width: 265px !important;
+    height: 340px !important;
+    margin-bottom: 50px;
   }
 }
 
