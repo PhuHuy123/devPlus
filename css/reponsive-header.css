@@ -1,0 +1,212 @@
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    position: absolute;
+  }
+  .header .row {
+    position: relative;
+    margin: 0;
+  }
+  .header .m-menu,
+  .logo,
+  .menu {
+    position: absolute;
+    padding: 0;
+  }
+  .menu {
+    width: 100% !important;
+  }
+  .header .m-menu {
+    top: 0;
+    margin-top: 89px;
+    height: auto !important;
+    width: 100%;
+    background: white;
+    transform: scaleY(0);
+    transition: 0.4s;
+    transform-origin: 0 0 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 100;
+  }
+  .click_menu:checked ~ .y-middle .m-menu {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  .m-menu ul {
+    text-align: left;
+    width: 100%;
+    display: block !important;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif !important;
+    font-weight: 600;
+    padding-left: 0;
+  }
+  /* -- */
+  .rs-menu-area ul .our-programme:hover > a::before {
+    display: none;
+  }
+  .our-programme > a::before {
+    display: none;
+  }
+  .rs-menu-area ul .our-programme:hover .menu-our {
+    transform: scaleY(0);
+  }
+  .rs-menu-parent {
+    display: block;
+  }
+  /* -- */
+  .m-menu ul li {
+    width: 100%;
+    line-height: 70px;
+    border-bottom: 1px solid #131313;
+  }
+  .m-menu .nav-menu {
+    margin-bottom: 0;
+  }
+  .m-menu .nav-menu > li > a {
+    padding-left: 20px;
+  }
+  .m-menu ul li .sub-menu {
+    padding: 0px;
+    text-transform: none;
+    font-weight: 400;
+    display: none;
+    border-top: 1px solid #131313;
+  }
+  .m-menu ul li .sub-menu li {
+    border: none;
+    padding: 10px 18px 10px 30px;
+  }
+  .m-menu ul li .sub-menu li a {
+    line-height: 46px !important;
+    color: black;
+    transition: 0.2s;
+    padding: 0;
+  }
+  .m-menu ul li .sub-menu li a:hover {
+    color: #226fb7;
+  }
+  .m-menu ul li .sub-menu {
+    margin-top: 70px;
+    z-index: 102;
+    width: 100% !important;
+    text-align: left;
+  }
+  .m-menu ul li .sub-menu a {
+    width: 100%;
+  }
+  .m-menu ul li .sub-menu .sub-menu-close {
+    width: 100%;
+    margin-bottom: 0px;
+    height: 50px;
+    text-align: center;
+    background: #f6f3ed;
+    line-height: 50px;
+    color: black;
+  }
+  .m-menu ul li .sub-menu .sub-menu-close i {
+    margin-right: 5px;
+  }
+  .m-menu ul li .rs-menu-parent {
+    width: 45px;
+    background: #ddd;
+    text-align: center;
+    float: right;
+    line-height: 70px;
+    font-size: 12px;
+  }
+  .m-menu ul .fa-angle-up {
+    display: none !important;
+  }
+  .click_angle:checked ~ li .sub-menu {
+    transform: scaleY(1) !important;
+  }
+  .click_angle:checked ~ li .rs-menu-parent .fa-angle-up {
+    display: inline !important;
+  }
+  .click_angle:checked ~ li .rs-menu-parent .fa-angle-down {
+    display: none !important;
+  }
+  .click_angle:checked ~ .activities {
+    display: none !important;
+  }
+  .m-menu .pointer-default {
+    color: #111111;
+    line-height: 70px;
+    width: 100%;
+    padding: 0 0 0 20px;
+    transition: 0.2s;
+  }
+  .m-menu .pointer-default:hover {
+    color: #226fb7;
+  }
+  .m-menu .title-home {
+    color: #226fb7;
+  }
+  /* header */
+  .header .logo {
+    width: 35%;
+    padding-left: 0;
+  }
+  .header .menu {
+    width: 65%;
+  }
+  .row .menu .c-menu {
+    display: none;
+  }
+  /* === footer === */
+  .footer-widget {
+    width: 100%;
+  }
+  .rs-footer .footer-top {
+    padding: 190px 0 0 0;
+  }
+  .rs-footer .container .row .col-3 {
+    max-width: 100% !important;
+    flex: none !important;
+    margin-bottom: 50px;
+  }
+  .rs-footer .container .row .col-3 h4 {
+    margin-bottom: 20px !important;
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 600 !important;
+  }
+  .site-one li:before {
+    transform: translateY(26px);
+  }
+  .site-two li:before {
+    transform: translateY(11px);
+  }
+  .site-three li:before {
+    transform: translateY(11px);
+  }
+  .site-map li,
+  .address-widget li {
+    margin-bottom: 11px;
+  }
+  .footer-top {
+    padding-top: 64px !important;
+  }
+  .footer-bottom .container .row .col-lg-4 {
+    max-width: 100% !important;
+    flex: none !important;
+  }
+  .footer-bottom .container .row .mb-40 {
+    margin-bottom: 40px;
+  }
+  .footer-bottom .container .row .text-end ul {
+    float: left;
+    padding: 0;
+  }
+  .footer-bottom .container .row:before {
+    width: 71%;
+  }
+}
+@media screen and (max-width: 767px) {
+}

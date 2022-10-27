@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/icon-logo.png"
+    />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -11,25 +16,766 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/reponsive.css" />
+
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/reponsive-header.css" />
+    <link rel="stylesheet" href="../css/hieu.css" />
+
+    <!-- hhasb -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>
       Dev+ Mission is support the early stage developer go through the right
       career path
     </title>
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    /> -->
+    <link rel="stylesheet" href="../css/anh.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="myFunction()">
     <!-- Loading - Pre Load -->
+    <div id="loader" class="loader">
+      <div class="loader-container">
+        <div class="loader-icon">
+          <img src="../images/icon-logo.png" alt="" />
+        </div>
+      </div>
+    </div>
     <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <input type="checkbox" class="click_menu" hidden id="click-menu" />
+        <div class="row y-middle">
+          <div class="col-lg-2 logo">
+            <img src="../images/logo.png" alt="logo" />
+          </div>
+          <div class="col-lg-9 text-end m-menu">
+            <nav class="rs-menu-area rs-menu">
+              <ul class="ul-main nav-menu">
+                <li>
+                  <a class="li-home" href="#" aria-current="page"> Home </a>
+                </li>
+                <li>
+                  <a href="#" aria-current="page"> About devplus </a>
+                </li>
+                <input
+                  type="checkbox"
+                  hidden
+                  class="click_angle"
+                  id="click-angle"
+                />
+                <li class="our-programme">
+                  <label class="rs-menu-parent" for="click-angle">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                  </label>
+                  <ul class="menu-our sub-menu">
+                    <li>
+                      <a href="one-plus-campus/">One plus campus</a>
+                    </li>
+                    <li>
+                      <a href="two-plus-campus/">Two plus campus</a>
+                    </li>
+                    <li>
+                      <a href="two-plus-campus/">Three plus campus</a>
+                    </li>
+                    <label class="sub-menu-close" for="click-angle">
+                      <i class="fa fa-times" aria-hidden="true"></i>Close
+                    </label>
+                  </ul>
+                  <a href="#" aria-current="page"> Our programme</a>
+                </li>
+                <li>
+                  <a href="#" aria-current="page"> Devplus Activities </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-1 menu">
+            <label class="fa-solid fa-bars" for="click-menu"></label>
+            <div class="c-menu">
+              <div class="close-menu">
+                <label for="click-menu">
+                  <img src="../images/SideBar/close.png" alt="close" />
+                </label>
+              </div>
+              <div class="canvas-logo">
+                <img src="../images/logo.png" alt="logo" />
+              </div>
+              <div class="offcanvas-text">
+                <p>
+                  Devplus's mission is filling the gap between school and
+                  corporate, reduce in-house training cost and effort for IT
+                  companies.
+                </p>
+              </div>
+              <div class="offcanvas-gallery">
+                <div class="gallery-img">
+                  <a
+                    onclick="imgFunction(1)"
+                    class="image-popup"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><img src="../images/SideBar/1.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a
+                    onclick="imgFunction(2)"
+                    class="image-popup"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><img src="../images/SideBar/2.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a
+                    onclick="imgFunction(3)"
+                    class="image-popup"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><img src="../images/SideBar/3.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a
+                    onclick="imgFunction(4)"
+                    id="img-4"
+                    class="image-popup"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><img src="../images/SideBar/4.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a
+                    onclick="imgFunction(5)"
+                    class="image-popup"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><img src="../images/SideBar/5.png" alt=""
+                  /></a>
+                </div>
+                <div class="gallery-img">
+                  <a
+                    onclick="imgFunction(6)"
+                    class="image-popup"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><img src="../images/SideBar/6.png" alt=""
+                  /></a>
+                </div>
+              </div>
+
+              <div class="map-img">
+                <img src="../images/SideBar/map.png" alt="" />
+              </div>
+              <div class="m_fb">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/Devplusprogramme"
+                  ><i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="z-index: 2000"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div
+            id="carouselExampleControlsNoTouching"
+            class="carousel slide"
+            data-bs-touch="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img
+                  src="../images/SideBar/1.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../images/SideBar/2.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../images/SideBar/3.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../images/SideBar/4.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../images/SideBar/5.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../images/SideBar/6.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="prev"
+            >
+              <span class="fa-solid fa-caret-left" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControlsNoTouching"
+              data-bs-slide="next"
+            >
+              <span class="fa-solid fa-caret-right" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- /// -->
+        </div>
+      </div>
+    </div>
     <!-- Banner -->
+    <article class="banner">
+      <div class="container">
+        <div class="banner-content text-center">
+          <h1
+            class="banner-title"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            Devplus Will Support The Early Stage Developers Go The Right Career
+            Path
+          </h1>
+          <p
+            class="banner-text-content"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            Devplus is not a training center, it’s battle campus for you to
+            level up your skillsets and ready to onboard any projects in our
+            “kindest” companies listing
+          </p>
+          <a href=""
+            ><button
+              class="banner-btn"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              data-aos-duration="1000"
+            >
+              Learn More
+            </button></a
+          >
+        </div>
+      </div>
+    </article>
     <!-- About -->
+    <article class="about pdb-100">
+      <div class="container">
+        <div class="row">
+          <section class="about-left col-md-8">
+            <div class="about-left-part">
+              <div class="about-left-content">
+                <p class="sub-title">ABOUT DEVPLUS</p>
+                <h2
+                  class="about-title"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                >
+                  The Fact: Skilled labour shortage for software companies but
+                  full of freshers and low level juniors
+                </h2>
+                <p
+                  class="about-left-text"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  Our responsibility is filling the gap between the quality of
+                  graduate students and the quality of engineers. Devplus will
+                  help reducing the cost of re-training and accelerating the
+                  skill-up progress of students and freshers.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="about-right col-md-4">
+            <div class="notice-bord">
+              <h4 class="notice-title">ROAD TO BE A DEVPLUS</h4>
+              <ul>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="100"
+                >
+                  <div class="count-number">
+                    <span>1</span>
+                  </div>
+                  <div class="notice-text-content">Apply Devplus</div>
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  <div class="count-number">
+                    <span>2</span>
+                  </div>
+                  <div class="notice-text-content">Testing and Interview</div>
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  <div class="count-number">
+                    <span>3</span>
+                  </div>
+                  <div class="notice-text-content">1st plus (+) campus</div>
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  <div class="count-number">
+                    <span>4</span>
+                  </div>
+                  <div class="notice-text-content">2nd plus (++) campus</div>
+                </li>
+                <li
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                >
+                  <div class="count-number">
+                    <span>5</span>
+                  </div>
+                  <div class="notice-text-content">
+                    Onboard & start your career
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
     <!-- Categories -->
-    <!-- Popular - Courses -->
-    <!-- Admission -->
-    <!-- Some common concerns -->
-    <!-- What alumni saying -->
-    <!-- Footer  -->
+    <article class="cate pdb-100">
+      <div class="container">
+        <h2>What an engineer after Devplus will must have?</h2>
+        <section class="row">
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4 col-sm-4">
+                <img src="../images/categories/1.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8 col-sm-8">
+                <h4>Programing foundation</h4>
+                <p>Algorithm, Design pattern</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="130"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/2.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>Database</h4>
+                <p>SQL Syntax</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="150"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/3.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>Testing</h4>
+                <p>Unit testing, TDD</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/4.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>Front-end</h4>
+                <p>HTM/CSS/Js , ReactJS/VueJS</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="230"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/5.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>Back-end</h4>
+                <p>PHP, NodeJS</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="260"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/6.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>Agile Stable Team</h4>
+                <p>Agile/Scrum</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/7.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>English</h4>
+                <p>Basic conversion</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="330"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/8.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>Communication</h4>
+                <p>HORENSO</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-4 cate-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="360"
+          >
+            <div class="cate-item row">
+              <div class="cate-img col-md-4">
+                <img src="../images/categories/9.png" alt="" />
+              </div>
+              <div class="cate-item-text col-md-8">
+                <h4>Career path</h4>
+                <p>Work ethic, Integrity</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+    <!-- start popular-course -->
+    <div class="popular_course">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="title">
+              <h2>Our main campus</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row popular_box">
+          <div class="col-md-4 box_mainitem">
+            <div class="box_item" data-aos="fade-up" data-aos-duration="3000">
+              <div class="box_img">
+                <img
+                  src="https://devplus.edu.vn/assets/images/devplus/One_plus.png"
+                  alt=""
+                />
+              </div>
+              <div class="box_title">
+                <h5>One plus (+) Programing foundation</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 box_mainitem">
+            <div class="box_item" data-aos="fade-up" data-aos-duration="3000">
+              <div class="box_img">
+                <img
+                  src="https://devplus.edu.vn/assets/images/devplus/Two_plus.png"
+                  alt=""
+                />
+              </div>
+              <div class="box_title">
+                <h5>Two plus (++) Skill up to to get ready</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 box_mainitem">
+            <div class="box_item" data-aos="fade-up" data-aos-duration="3000">
+              <div class="box_img">
+                <img
+                  src="https://devplus.edu.vn/assets/images/devplus/Three_plus.png"
+                  alt=""
+                />
+              </div>
+              <div class="box_title">
+                <h5>Three plus (+++) How to become a senior</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popular_course -->
+    <!-- start admission -->
+    <div class="admission">
+      <div class="col-md-6 p-0 admission_img">
+        <img
+          src="https://devplus.edu.vn/assets/images/devplus/Admission_for_2021.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="col-md-6 admission_text"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        <div class="admission_title">
+          <h4>Admission for 2021</h4>
+        </div>
+        <div class="admission_content">
+          <p>
+            Disclaimer: This position is expected to start around Feb 2022 and
+            continue through the entire Summer term. We ask for a minimum of 12
+            weeks, full-time, for most internships. Please consider before
+            submitting an application.
+            <br />
+            Devplus aims to provide students the chance to work with our clients
+            and awesome mentors to level up your programing skillset in the
+            RIGHT path. With your education and experience, you will be able to
+            take on real-world challenges from day one.
+          </p>
+        </div>
+        <div class="admission_button">
+          <a
+            href="https://stunited.typeform.com/registration?typeform-source=devplus.edu.vn"
+            ><button>APPLY NOW</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- end admission -->
+    <footer class="rs-footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">
+                DEVELOP THE SKILLS TO MOVE FAST AND STAY AHEAD.
+              </h4>
+              <ul class="site-map site-one white-color">
+                <li>
+                  Devplus is not a training center, it's battle campus for you
+                  to level up your skillsets and ready to onboard any projects
+                  in our “kindest” companies listing
+                </li>
+              </ul>
+            </div>
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">FOR DEVPLUS</h4>
+              <ul class="site-map site-two">
+                <li>
+                  <a href="https:/my.devplus.asia" target="_blank"
+                    >Training space</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/Devplusprogramme"
+                    target="_blank"
+                    >Alumni network</a
+                  >
+                </li>
+                <li>
+                  <a href="https://conext.asia/" target="_blank"
+                    >Connect with experts</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">OUR CAMPUS</h4>
+              <ul class="site-map site-three">
+                <li><a>One plus (+) Programing foundation</a></li>
+                <li><a>Two plus (++) Skill up and onboard</a></li>
+                <li><a>Three plus (+++) Become a senior</a></li>
+              </ul>
+            </div>
+            <div class="col-3 footer-widget">
+              <h4 class="widget-title">ADDRESS</h4>
+              <ul class="address-widget">
+                <li>
+                  <div>
+                    <img src="../images/icons/map.png" alt="map" />
+                  </div>
+                  <div class="desc">
+                    368 Đường Trần Hưng Đạo, An Hải, An Hải Tây, Sơn Trà, Đà
+                    Nẵng
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <img src="../images/icons/phone-call.png" alt="phone" />
+                  </div>
+                  <div class="desc">
+                    <a href="tel:0368492885">(+84) 368492885</a>
+                  </div>
+                </li>
+                <li>
+                  <div><img src="../images/icons/mail.png" alt="mail" /></div>
+                  <div class="desc">
+                    <a href="mailto:hello@stunited.vn">hello@stunited.vn</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row y-middle">
+            <div class="col-lg-4">
+              <div class="footer-logo md-text-center">
+                <a class="pointer-default"
+                  ><img src="../images/logo.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-40">
+              <div class="copyright text-center"></div>
+            </div>
+            <div class="col-lg-4 text-end">
+              <ul class="footer-social">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/Devplusprogramme"
+                    ><i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>Facebook</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- Back to top -->
+    <button id="btnBackTop" onclick="topFunction()">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- === -->
+    <script src="../js/header.js"></script>
+    <script src="../js/myFunctions.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -46,5 +792,9 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
