@@ -144,7 +144,10 @@
                   /></a>
                 </div>
               </div>
-
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
               <div class="map-img">
                 <img src="../images/SideBar/map.png" alt="" />
               </div>
@@ -160,16 +163,32 @@
         </div>
       </div>
     </header>
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Banner -->
     <article class="banner">
       <div class="container">
         <div class="banner-content text-center">
-          <h1 class="banner-title" data-aos="fade-right" data-aos-duration="2000">Devplus Will Support The Early Stage Developers Go The Right Career Path</h1>
-          <p class="banner-text-content" data-aos="fade-left" data-aos-duration="2000">
+          <h1 class="banner-title" data-aos="fade-right" data-aos-duration="3000">Devplus Will Support The Early Stage Developers Go The Right Career Path</h1>
+          <p class="banner-text-content" data-aos="fade-left" data-aos-duration="3000">
             Devplus is not a training center, it’s battle campus for you to level up your skillsets and ready to onboard any projects in our “kindest” companies listing
           </p>
-            <a href="" ><button class="banner-btn" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">Learn More</button></a>
+            <a href="" ><button class="banner-btn" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">Learn More</button></a>
         </div>
       </div>
     </article>
@@ -478,7 +497,7 @@
     ></script>
 
     <!-- === -->
-    <script>
+    <!-- <script>
       window.onscroll = function () {
         scrollFunction();
       };
@@ -499,7 +518,7 @@
           document.getElementById("header").style.top = "0px";
         }
       }
-    </script>
+    </script> -->
     <script src="../js/myFunctions.js"></script>
   </body>
 </html>
