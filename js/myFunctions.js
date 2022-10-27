@@ -32,17 +32,6 @@ function showPage() {
 }
 AOS.init();
 
-// Slick Slider Events
-$(document).ready(function () {
-  // $(".alumni-saying").slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 2,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  // });
-});
-//End Slick Slider Events
-
 // Function play video 
 let btn = document.querySelector(".video-play");
 let video = document.querySelector(".video-hide");
@@ -61,9 +50,9 @@ closeVideo.onclick = function () {
 
 let imgCount = 0
 const data = [
-  {role: 'Member Devplus ++', img: '../images/Alumni/person3.png', name: 'Thatsadaphone Inthapakdy', description: 'Dev plus help me to re-train about knowledge with technology, experience how to do the real project with senior developers by testing their current project, and share more experience with them. enjoy more events and workshops.'},
-  {role: 'Member Devplus ++', img: '../images/Alumni/person2.png', name: 'Quynh Nga', description: 'I learnt a lot of knowledge from experienced seniors of Dev plus. They help me to understand the procedure in running a real project. Additionally, taking part in activities such as workshops promote my soft skills.'},
-  {role: 'Member Devplus ++', img: '../images/Alumni/person1.png', name: 'Tien Thinh', description: 'This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.'},
+  {role: 'Member Devplus ++', img: './images/Alumni/person3.png', name: 'Thatsadaphone Inthapakdy', description: 'Dev plus help me to re-train about knowledge with technology, experience how to do the real project with senior developers by testing their current project, and share more experience with them. enjoy more events and workshops.'},
+  {role: 'Member Devplus ++', img: './images/Alumni/person2.png', name: 'Quynh Nga', description: 'I learnt a lot of knowledge from experienced seniors of Dev plus. They help me to understand the procedure in running a real project. Additionally, taking part in activities such as workshops promote my soft skills.'},
+  {role: 'Member Devplus ++', img: './images/Alumni/person1.png', name: 'Tien Thinh', description: 'This is an awesome programme which supports me too much in enhancing my skills and knowledge to become a developer. I feel very lucky because of joining Devplus.'},
 ]
 const frame = document.body.querySelector('.frame')
 data.forEach(_data => appendCard(_data))
@@ -80,7 +69,7 @@ function appendCard(data) {
   newCard.innerHTML = `
   <div class="alumni-saying-detail">
   <div class="alumni-quote">
-    <img class="alumni-quote-icon" src="../images/Alumni/quote2.png"></img>
+    <img class="alumni-quote-icon" src="./images/Alumni/quote2.png"></img>
     <div class="alumni-quote-description">${data.description}</div>
     <div class="alumni-quote-info">
       <img src="${data.img}" alt="">
@@ -140,7 +129,7 @@ function complete() {
   if (next) initCard(next)
   current = next
   likeText = current.children[0]
-  appendCard(data[imgCount % 4])
+  appendCard(data[imgCount % 3])
   setTimeout(() => frame.removeChild(prev), innerWidth)
 }
 
