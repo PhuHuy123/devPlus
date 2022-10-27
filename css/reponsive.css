@@ -1,54 +1,93 @@
-@media screen and (max-width: 1200px){
-   .video-hide.active>iframe {
-      width: 700px !important;
-      height: 400px !important;
-    }
+@media screen and (max-width: 1200px) {
+  .video-hide.active > iframe {
+    width: 700px !important;
+    height: 400px !important;
+  }
 }
 
-@media screen and (max-width: 992px){
-   .video-hide.active>iframe {
-      width: 500px !important;
-      height: 300px !important;
-   }
+@media screen and (max-width: 992px) {
+  .video-hide.active > iframe {
+    width: 500px !important;
+    height: 300px !important;
+  }
 
-   .video-close {
-      top: 80% !important;
-   }
+  .video-close {
+    top: 80% !important;
+  }
 }
 
-@media screen and (max-width: 767px){
-   .common-concerns-left {
+@media screen and (max-width: 767px) {
+  .common-concerns-left {
     padding: 0 15px 0 15px !important;
-   }
+  }
 
-   .common-concerns-title {
-      margin: 0px !important;
-      text-align: center !important;
-   }
+  .common-concerns-title {
+    margin: 0px !important;
+    text-align: center !important;
+  }
 
-   .common-concerns-title>h2 {
-      font-size: 32px;
-      align-items: center !important;
-   }
+  .common-concerns-title > h2 {
+    font-size: 32px;
+    align-items: center !important;
+  }
 
-   .common-concerns-icon {
-      width: 35px !important;
-      height: 35px !important;
-      margin-right: 10px;
-      margin-left: 10px;
-    }
+  .common-concerns-icon {
+    width: 35px !important;
+    height: 35px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 
-   .accordion-item {
-      margin-bottom: 10px !important;
-   }
+  .accordion-item {
+    margin-bottom: 10px !important;
+  }
 
-   .video-hide.active>iframe {
-      width: 350px !important;
-      height: 250px !important;
-    }
+  .video-hide.active > iframe {
+    width: 350px !important;
+    height: 250px !important;
+  }
 
-   .video-close {
-      top: 75% !important;
-   }
+  .video-close {
+    top: 75% !important;
+  }
+
+  .gallery  {
+   display: none !important;
+  }
+
+  .frame {
+   position:  relative !important;
+   opacity: 1 !important;
+  }
+
+  .alumni {
+    margin-top: 20px !important;
+  }
+
+  .alumni-title>h2 {
+    margin-bottom: 0px !important;
+  }
+  
+  .alumni-quote {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .rs-footer {
+
+    margin-top: 10px !important;
+  }
 }
 
+@media screen and (max-height: 540px) {
+  .frame {
+    width: 54vh;
+    height: 81vh;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-height: 440px) {
+  .frame {
+    font-size: 8px;
+  }
+}
