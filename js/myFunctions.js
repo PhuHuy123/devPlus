@@ -140,7 +140,7 @@ function complete() {
   if (next) initCard(next)
   current = next
   likeText = current.children[0]
-  appendCard(data[imgCount % 4])
+  appendCard(data[imgCount % 3])
   setTimeout(() => frame.removeChild(prev), innerWidth)
 }
 
