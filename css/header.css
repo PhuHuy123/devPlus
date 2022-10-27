@@ -39,6 +39,9 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+.header .li-home {
+  color: #226fb7 !important;
+}
 .header .menu {
   float: right;
 }
@@ -326,7 +329,7 @@
 
 .modal-content {
   background-color: transparent !important;
-  border: none so;
+  border: none;
 }
 .modal-content .modal-header {
   padding: 0;
