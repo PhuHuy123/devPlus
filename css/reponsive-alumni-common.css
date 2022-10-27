@@ -3,9 +3,17 @@
     width: 700px !important;
     height: 400px !important;
   }
+  .alumni-quote-description {
+    width: 400px !important;
+    height: 240px !important;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .container {
+    max-width: 100% !important;
+  }
   .video-hide.active > iframe {
     width: 500px !important;
     height: 300px !important;
@@ -14,9 +22,19 @@
   .video-close {
     top: 80% !important;
   }
+
+  .alumni-quote-description {
+    width: 265px !important;
+    height: 340px !important;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .common-concerns {
+    margin-top: 0 !important; 
+  }
+
   .common-concerns-left {
     padding: 0 15px 0 15px !important;
   }
@@ -71,23 +89,30 @@
   .alumni-quote {
     padding: 0 !important;
     width: 100% !important;
+    margin: 0!important;
   }
   .rs-footer {
-
     margin-top: 10px !important;
   }
+
+  .alumni-quote-description {
+    width: 100% !important;
+    height: 250px !important;
+  }
 }
 
-@media screen and (max-height: 540px) {
+@media screen and (max-width: 400px) {
   .frame {
-    width: 54vh;
-    height: 81vh;
+    height: 550px !important;
     font-size: 13px;
   }
-}
 
-@media screen and (max-height: 440px) {
-  .frame {
-    font-size: 8px;
+  .alumni-quote-description {
+    font-size: 18px !important;
+  }
+
+  .alumni-name {
+    font-size: 15px !important;
   }
 }
+

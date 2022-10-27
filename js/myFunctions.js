@@ -32,17 +32,6 @@ function showPage() {
 }
 AOS.init();
 
-// Slick Slider Events
-$(document).ready(function () {
-  // $(".alumni-saying").slick({
-  //   slidesToShow: 2,
-  //   slidesToScroll: 2,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  // });
-});
-//End Slick Slider Events
-
 // Function play video 
 let btn = document.querySelector(".video-play");
 let video = document.querySelector(".video-hide");
@@ -140,7 +129,7 @@ function complete() {
   if (next) initCard(next)
   current = next
   likeText = current.children[0]
-  appendCard(data[imgCount % 4])
+  appendCard(data[imgCount % 3])
   setTimeout(() => frame.removeChild(prev), innerWidth)
 }
 
