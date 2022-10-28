@@ -40,8 +40,12 @@ AOS.init();
 let btn = document.querySelector(".video-play");
 let video = document.querySelector(".video-hide");
 let closeVideo = document.querySelector(".video-close");
+let iframeVideo = document.querySelector(".iframe-video");
+let soureIframeVideo = "https://www.youtube.com/embed/mUjhiT0zSKI";
 
 btn.onclick = function () {
+  iframeVideo.src = soureIframeVideo;
+  console.log(iframeVideo.src);
   btn.classList.add("active");
   video.classList.add("active");
 };
@@ -49,6 +53,7 @@ btn.onclick = function () {
 closeVideo.onclick = function () {
   btn.classList.remove("active");
   video.classList.remove("active");
+  iframeVideo.src = "";
 };
 //End Function play video
 
