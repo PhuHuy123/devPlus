@@ -28,7 +28,7 @@ function topFunction() {
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 1500);
+  myVar = setTimeout(showPage, 2000);
 }
 
 function showPage() {
