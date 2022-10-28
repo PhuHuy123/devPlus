@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about-left-part{
     background-color: #e7f4f6;
-    padding: 60px 60px 85px 60px;
+    padding: 60px 60px 60px 60px;
     margin-top: -60px;
     border-radius: 3px;
 }
@@ -219,6 +219,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 30px;
     font-size: 15px;
     margin-bottom: unset;
+    width: 80%;
 }
 .cate-item-text h4{
     font-weight: bold;
