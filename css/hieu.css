@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 30px;
     font-size: 15px;
     margin-bottom: unset;
-    width: 80%;
+    width: 70%;
 }
 .cate-item-text h4{
     font-weight: bold;
@@ -283,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%;
     }
     .cate-item-text{
-        width: 80%;
+        width: 70%;
     }
     .cate-img{
         width: 70px;
@@ -304,9 +304,6 @@ h1, h2, h3, h4, h5, h6 {
     }
     .about-left-part{
         padding: 25px;
-    }
-    .cate-img{
-        width: 20%;
     }
     .loader-container {
         position: absolute;
