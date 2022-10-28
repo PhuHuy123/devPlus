@@ -4,6 +4,11 @@ window.onscroll = function () {
   scrollFunction();
 };
 function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("header").classList.add("header--active");
+  } else {
+    document.getElementById("header").classList.remove("header--active");
+  }
   if (
     document.body.scrollTop > 600 ||
     document.documentElement.scrollTop > 600
@@ -89,10 +94,10 @@ function appendCard(data) {
   newCard.innerHTML = `
   <div class="alumni-saying-detail">
   <div class="alumni-quote">
-    <img class="alumni-quote-icon" src="./images/Alumni/quote2.webp"></img>
+    <img alt="one"class="alumni-quote-icon" src="./images/Alumni/quote2.webp"></img>
     <div class="alumni-quote-description">${data.description}</div>
     <div class="alumni-quote-info">
-      <img src="${data.img}" alt="">
+      <img alt="one"src="${data.img}" alt="">
       <div class="alumni-name">${data.name}</div>
       <div class="alumni-position">${data.role}</div>
     </div>
