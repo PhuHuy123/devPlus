@@ -105,12 +105,42 @@
   box-shadow: 0 0 100px blue;
   transition: 1s;
 }
-
+.example-play {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  background-color: #226fb7;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+.video-play:hover .example-play {
+  animation: example 1500ms ease-out infinite;
+  background-color: transparent;
+}
+@keyframes example {
+  50% {
+    transform: translate(-50%, -50%) scale(0.5, 0.5);
+    background-color: #226fb7;
+    display: block;
+  }
+  99% {
+    transform: translate(-50%, -50%) scale(1, 1);
+    display: block;
+    width: 180px;
+    height: 180px;
+  }
+  100% {
+    transform: translate(-100%, -100%) scale(0, 0);
+    display: none;
+  }
+}
 .fa-play {
   position: absolute;
   color: #ffffff;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
   font-size: 30px;
   line-height: 70px;
@@ -165,7 +195,7 @@
 }
 
 .alumni-quote {
-  border-radius: 10%;
+  border-radius: 5%;
   text-align: center;
   background-color: #f3f8f9;
   padding: 80px 40px 30px;
@@ -200,7 +230,7 @@
   width: 66%;
   height: 200px;
   margin-right: 10px;
-  background: #8C8;
+  background: #8c8;
   counter-increment: gallery-cell;
 }
 
@@ -213,12 +243,18 @@
   font-size: 80px;
   color: white;
 }
-
+.flickity-page-dots .dot {
+  width: 40px;
+  border-radius: 5px;
+  background-color: #226fb7;
+}
 .frame {
   opacity: 0;
   position: absolute;
   width: 80%;
   height: 550px;
+  display: none;
+  margin-bottom: 40px;
 }
 
 .icons {
@@ -237,16 +273,22 @@
   cursor: pointer;
 }
 
-.icons > svg:nth-child(1) { fill: #fb4f68; margin-right: 2vh; }
-.icons > svg:nth-child(2) { fill: #4dca93; }
-.icons > svg > path:nth-child(1) { fill: #fff; }
+.icons > svg:nth-child(1) {
+  fill: #fb4f68;
+  margin-right: 2vh;
+}
+.icons > svg:nth-child(2) {
+  fill: #4dca93;
+}
+.icons > svg > path:nth-child(1) {
+  fill: #fff;
+}
 
 .card-custom {
   position: absolute;
   align-items: flex-end;
   justify-content: center;
   width: 200%;
-  border-radius: 10px;
   user-select: none;
   cursor: pointer;
   background-size: cover;
@@ -265,7 +307,7 @@
   left: 50%;
   bottom: 30%;
   transform: translateX(-50%) rotate(-10deg);
-  width:70%;
+  width: 70%;
   height: 13%;
   font-size: 3em;
   letter-spacing: 0.2em;
@@ -309,4 +351,8 @@
 
 .alumni-saying-detail {
   width: 50%;
+}
+
+.alumni-quote-info>img {
+  border-radius: 50%;
 }

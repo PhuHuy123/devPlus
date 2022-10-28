@@ -209,4 +209,7 @@
   }
 }
 @media screen and (max-width: 767px) {
+  header .logo {
+    width: 60% !important;
+  } 
 }
