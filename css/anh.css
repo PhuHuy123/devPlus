@@ -128,7 +128,7 @@
         background-color: #f3f8f9;
         display: grid;
         grid-template-columns: 6fr 6fr;
-        grid-template-rows: 450px;
+        /* grid-template-rows: 450px; */
         gap: 20px;
     }
     .admission_img{
