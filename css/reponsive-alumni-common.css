@@ -1,0 +1,119 @@
+@media screen and (max-width: 1200px) {
+  .video-hide.active > iframe {
+    width: 700px !important;
+    height: 400px !important;
+  }
+  .alumni-quote-description {
+    width: 400px !important;
+    height: 240px !important;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 100% !important;
+  }
+  .video-hide.active > iframe {
+    width: 500px !important;
+    height: 300px !important;
+  }
+
+  .video-close {
+    top: 80% !important;
+  }
+
+  .alumni-quote-description {
+    width: 265px !important;
+    height: 340px !important;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .common-concerns {
+    margin-top: 0 !important;
+  }
+
+  .common-concerns-left {
+    padding: 0 15px 0 15px !important;
+  }
+
+  .common-concerns-title {
+    margin: 0px !important;
+    text-align: center !important;
+  }
+
+  .common-concerns-title > h2 {
+    font-size: 32px;
+    align-items: center !important;
+  }
+
+  .common-concerns-icon {
+    width: 35px !important;
+    height: 35px !important;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .accordion-item {
+    margin-bottom: 10px !important;
+  }
+
+  .video-hide.active > iframe {
+    width: 350px !important;
+    height: 250px !important;
+  }
+
+  .video-close {
+    top: 75% !important;
+  }
+
+  .gallery {
+    display: none !important;
+  }
+
+  .frame {
+    position: relative !important;
+    opacity: 1 !important;
+    display: block !important;
+  }
+
+  .alumni {
+    margin-top: 20px !important;
+  }
+
+  .alumni-title > h2 {
+    margin-bottom: 0px !important;
+  }
+
+  .alumni-quote {
+    padding: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .rs-footer {
+    margin-top: 10px !important;
+  }
+
+  .alumni-quote-description {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .frame {
+    height: 550px !important;
+    font-size: 13px;
+    display: block !important;
+  }
+
+  .alumni-quote-description {
+    font-size: 18px !important;
+  }
+
+  .alumni-name {
+    font-size: 15px !important;
+  }
+}
