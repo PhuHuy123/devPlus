@@ -1,0 +1,10 @@
+.image_full{
+    margin-bottom: 50px;
+    margin-top: 200px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.image_full img:hover{
+    transform: scale(1.1,1.1);
+    transition: 2s;
+}

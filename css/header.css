@@ -39,6 +39,9 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+.header .li-home {
+  color: #226fb7 !important;
+}
 .header .menu {
   float: right;
 }
@@ -322,4 +325,40 @@
 }
 .rs-footer .footer-top .container .row .widget-title {
   color: white;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  border: none;
+}
+.modal-content .modal-header {
+  padding: 0;
+}
+.modal-content .modal-header button {
+  background-color: transparent !important;
+  border: none;
+  width: 100%;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.699);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.carousel-control-next {
+  margin-right: -250px;
+}
+.carousel-control-prev {
+  margin-left: -250px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  height: 110px;
+  top: 45%;
+}
+.fa-caret-right,
+.fa-caret-left {
+  font-size: 40px;
+}
+.modal {
+  /* display: block; */
+  z-index: 9999 !important;
 }
