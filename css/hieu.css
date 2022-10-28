@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ff914d;
 }
 /* LOader */
-#loader{
+.loader{
     width: 100%;
     height: 100%;
     background-color: white;
@@ -57,11 +57,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0px;
     top: 0px;
     z-index: 999;
+
 }
 .loader-container{
     position: absolute;
-    left: 45%;
-    top: 38%;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -292,11 +291,6 @@ h1, h2, h3, h4, h5, h6 {
     .cate-img img{
         width: 100%;
     }
-    .loader-container {
-        position: absolute;
-        left: 42%;
-        top: 38%;
-    }
 }
 @media screen and (max-width: 480px){
     .banner-title{
@@ -305,10 +299,6 @@ h1, h2, h3, h4, h5, h6 {
     .about-left-part{
         padding: 25px;
     }
-    .loader-container {
-        position: absolute;
-        left: 38%;
-        top: 38%;
-    }
+
     
 }
