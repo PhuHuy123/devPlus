@@ -6,6 +6,23 @@
   height: 90px;
   background-color: #ffffff;
   z-index: 200;
+  top: 0px;
+}
+.header--active {
+  animation: header-ani ease-in 0.3s;
+  transition: top;
+  height: 90px;
+  transform-origin: 0 0 0;
+}
+@keyframes header-ani {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
 }
 .header .container {
   text-align: center;
@@ -205,7 +222,7 @@
 }
 /* === footer === */
 .rs-footer {
-  background-image: url(../images/footer-bg.png);
+  background-image: url(../images/footer-bg.webp);
   background-color: #273c66;
   background-size: cover;
   margin-top: 50px;
