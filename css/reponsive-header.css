@@ -2,6 +2,12 @@
 }
 
 @media screen and (max-width: 992px) {
+  @keyframes header-ani {
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
   .header {
     position: absolute;
   }
@@ -109,6 +115,7 @@
     background: #f6f3ed;
     line-height: 50px;
     color: black;
+    display: flow-root !important;
   }
   .m-menu ul li .sub-menu .sub-menu-close i {
     margin-right: 5px;
@@ -211,5 +218,5 @@
 @media screen and (max-width: 767px) {
   header .logo {
     width: 60% !important;
-  } 
+  }
 }
